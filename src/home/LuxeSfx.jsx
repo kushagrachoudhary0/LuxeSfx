@@ -1,6 +1,6 @@
 import React from "react";
 import Animations from "./Animation";
-
+import logo from '../home/WhatsApp_Image_2025-07-11_at_2.15.39_PM-removebg-preview (1).png';
 const LuxeSFX = () => {
   return (
     <>
@@ -23,13 +23,6 @@ const LuxeSFX = () => {
           display: flex;
           justify-content: space-between;
           align-items: center;
-        }
-        .logo {
-          font-size: 24px;
-          font-weight: bold;
-          background: linear-gradient(to right, #a855f7, #ec4899);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
         }
         .menu a {
           margin-left: 24px;
@@ -222,7 +215,9 @@ const LuxeSFX = () => {
 
       {/* Navigation */}
       <nav className="navbar">
-        <div className="logo">LUXE SFX</div>
+        <div className="logo">
+  <img src={logo} alt="LUXE SFX Logo" style={{ height: '100px' ,width:'100px'}} />
+</div>
         <div className="menu">
           <a href="#home">Home</a>
           <a href="#services">Services</a>
